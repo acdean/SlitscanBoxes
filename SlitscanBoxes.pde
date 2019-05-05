@@ -47,7 +47,7 @@ void draw() {
   }
   slit.copy(g, width / 2, 0, 1, height, (frameCount - 1) % FRAMES, 0, 1, height);
   if ((frameCount % FRAMES) == 0) {
-    // save, display and pause    int rand = (int)random(10000);
+    // save, display and pause
     String filename = "slitscan_" + nf((int)random(10000), 4) + ".png";
     slit.save(filename);
     copy(slit, 0, 0, WIDTH, HEIGHT, 0, 0, WIDTH, HEIGHT);
